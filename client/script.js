@@ -19,7 +19,8 @@ async function initDiscounts() {
 	renderAllUsersOnDiscount(discounts, c2Container)
 }
 initDiscounts()
-addBtn.addEventListener('click', async () => {
+addBtn.addEventListener('click', async (event) => {
+	event.preventDefault()
 	const good = { 
 		name: inputName.value,
 		price: inputPrice.value,
