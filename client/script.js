@@ -27,4 +27,6 @@ addBtn.addEventListener('click', async (event) => {
 		onDiscount: inputDiscount.checked
 	 }
 	await UserRequests.addUser(`${SERVER_URL}/api/addUser`, good)
+	initAllGoods()
+	initDiscounts()
 })
